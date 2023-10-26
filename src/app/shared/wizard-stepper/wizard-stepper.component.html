@@ -1,0 +1,9 @@
+<p>wizard-stepper works!</p>
+
+<mat-stepper [linear]="true" [selectedIndex]="currentIndex">
+  <mat-step *ngFor="let step of wizardSteps; let i = index">
+    <ng-template matStepLabel>{{ step.label }}</ng-template>
+  </mat-step>
+</mat-stepper>
+
+<ng-content></ng-content>
