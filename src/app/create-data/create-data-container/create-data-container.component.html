@@ -1,0 +1,7 @@
+<p>create-data-container works!</p>
+
+<app-wizard-stepper #wizardStepper [wizardSteps]="steps" [currentIndex]="currentStep">
+  <app-data-step-one *ngIf="wizardStepper.currentIndex === 0"></app-data-step-one>
+  <app-data-step-two *ngIf="wizardStepper.currentIndex === 1"></app-data-step-two>
+  <app-data-step-three *ngIf="wizardStepper.currentIndex === 2"></app-data-step-three>
+</app-wizard-stepper>
